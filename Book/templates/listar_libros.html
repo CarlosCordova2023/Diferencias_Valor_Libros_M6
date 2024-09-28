@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Diferencias entre libros{% endblock %}
+
+{% block content %}
+    <h1>Lista de Libros</h1>
+    <ul>
+        {% for libro in libros %}
+            <li>{{ libro.titulo }} - Autor: {{ libro.autor }} - Valoración: {{ libro.valoracion }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Libros con Valoración Mayor a 1500</h2>
+    <ul>
+        {% for libro in libros_filtrados %}
+            <li>{{ libro.titulo }} - Autor: {{ libro.autor }} - Valoración: {{ libro.valoracion }}</li>
+        {% endfor %}
+    </ul>
+    {% endblock %}

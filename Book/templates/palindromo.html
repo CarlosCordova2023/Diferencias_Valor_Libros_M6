@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Palíndromo</title>
+</head>
+<body>
+    <h1>Verificación de Palíndromo</h1>
+    <p>La palabra o frase que ingresaste es: <strong>{{ palabra }}</strong></p>
+    {% if es_palindromo %}
+        <p>¡Es un palíndromo!</p>
+    {% else %}
+        <p>No es un palíndromo.</p>
+    {% endif %}
+</body>
+</html>
